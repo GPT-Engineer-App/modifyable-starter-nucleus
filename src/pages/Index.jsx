@@ -1,13 +1,15 @@
 import { useState } from 'react';
 import { Button } from "@/components/ui/button";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 const Index = () => {
   const [count, setCount] = useState(0);
 
   return (
     <div className="min-h-screen flex flex-col">
-      <header className="bg-primary text-primary-foreground p-4">
+      <header className="bg-primary text-primary-foreground p-4 flex justify-between items-center">
         <h1 className="text-2xl font-bold">My App</h1>
+        <ThemeToggle />
       </header>
 
       <main className="flex-grow container mx-auto px-4 py-8">
