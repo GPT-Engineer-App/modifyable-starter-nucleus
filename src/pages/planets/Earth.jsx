@@ -1,19 +1,9 @@
-import { Button } from "@/components/ui/button";
-import { ThemeToggle } from "@/components/theme-toggle";
-import { Link } from "react-router-dom";
+import Navbar from "@/components/Navbar";
 
 const Earth = () => {
   return (
     <div className="min-h-screen flex flex-col">
-      <header className="bg-primary text-primary-foreground p-4 flex justify-between items-center">
-        <h1 className="text-2xl font-bold">Earth</h1>
-        <div className="flex items-center space-x-4">
-          <Link to="/app">
-            <Button variant="outline">Back to App</Button>
-          </Link>
-          <ThemeToggle />
-        </div>
-      </header>
+      <Navbar />
 
       <main className="flex-grow container mx-auto px-4 py-8">
         <h2 className="text-3xl font-bold mb-6">Earth: Our Home Planet</h2>

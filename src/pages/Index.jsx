@@ -1,22 +1,13 @@
 import { useState } from 'react';
 import { Button } from "@/components/ui/button";
-import { ThemeToggle } from "@/components/theme-toggle";
-import { Link } from "react-router-dom";
+import Navbar from "@/components/Navbar";
 
 const Index = () => {
   const [count, setCount] = useState(0);
 
   return (
     <div className="min-h-screen flex flex-col">
-      <header className="bg-primary text-primary-foreground p-4 flex justify-between items-center">
-        <h1 className="text-2xl font-bold">My App</h1>
-        <div className="flex items-center space-x-4">
-          <Link to="/">
-            <Button variant="outline">Back to Landing</Button>
-          </Link>
-          <ThemeToggle />
-        </div>
-      </header>
+      <Navbar />
 
       <main className="flex-grow container mx-auto px-4 py-8">
         <h2 className="text-3xl font-bold mb-6">Welcome to the Main App</h2>

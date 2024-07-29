@@ -1,14 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { ThemeToggle } from "@/components/theme-toggle";
+import Navbar from "@/components/Navbar";
 
 const LandingPage = () => {
   return (
     <div className="min-h-screen flex flex-col">
-      <header className="bg-primary text-primary-foreground p-4 flex justify-between items-center">
-        <h1 className="text-2xl font-bold">Welcome to My App</h1>
-        <ThemeToggle />
-      </header>
+      <Navbar />
 
       <main className="flex-grow container mx-auto px-4 py-8 flex flex-col items-center justify-center">
         <h2 className="text-4xl font-bold mb-6">Discover Amazing Features</h2>
